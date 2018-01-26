@@ -1,0 +1,24 @@
+//social
+.ba-social {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  &__list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    @include breakpoint(lg) {
+      width: 60%;
+    }
+    li {
+      font-size: 21px;
+      & a {
+        padding: 5px;
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+  }
+}

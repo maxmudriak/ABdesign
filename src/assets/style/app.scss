@@ -1,0 +1,116 @@
+@import "bootstrap-sprockets";
+@import "bootstrap-variables";
+@import "bootstrap-custom";
+@import "mixins";
+
+@import "header";
+@import "works";
+@import "footer";
+
+
+@import "slick.scss";
+
+//font
+@import url('https://fonts.googleapis.com/css?family=Helvetica:400,600,|Abril+Fatface:400');
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+svg{
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	@include ba-transition('fill, stroke');
+}
+a,
+[type="submit"],
+[type="button"],
+button,
+.btn{
+	@include ba-transition;
+}
+a{
+	& >	svg{
+		fill: $text-color;
+	}
+}
+.cf:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+//title
+.ba-title {
+	font-family: $font-family-heading;
+	letter-spacing: 0.05em;
+	line-height: 1;
+	padding-bottom: 35px;
+	margin: 0;
+	a {
+		&:hover {
+			border-bottom: 1px solid #000000;
+		}
+	}
+}
+//text
+.ba-text {
+	padding-bottom: 10px;
+}
+//ba-about
+
+.ba-about {
+	&__title {
+		font-size: $font-size-h3;
+	}
+	&__section {
+		padding-top: 160px;
+	}
+}
+//affix
+
+.affix {
+	width: 100%;
+	top: 1px;
+	@include breakpoint(lg) {
+		width: 470px;
+	}
+	@include breakpoint(md) {
+		top: 1px;
+		width: 375px;
+	}
+ }
+.affix-bottom {
+	position: static;
+	width: 100%;
+	@include breakpoint(lg) {
+		width: 470px;
+	}
+	@include breakpoint(md) {
+		position: absolute;
+		width: 375px;
+	}
+}
+
+//fixed nav
+.ba-fixed-nav {
+	position: fixed;
+	right: 20px;
+	bottom: 3px;
+	padding: 10px;
+	font-size: 35px;
+	transition: transform 0.3s, opacity 0.5s ease-in;
+	opacity: 0;
+	&.visible {
+		opacity: 1;
+	}
+	&:hover {
+		transform: translateY(-10px);
+	}
+}
+
+@import "contact";
+//2 page
+@import "portfolio";
+//3 page
+@import "abel";

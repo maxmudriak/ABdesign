@@ -1,0 +1,68 @@
+.ba-contact {
+  padding-top: 130px;
+  &__gradient {
+    background: linear-gradient(rgba(159, 160, 165, 0.95) 0%, rgba(247, 247, 248, 0.06) 22%);
+  }
+  &__title {
+    font-family: "Abril Fatface",cursive;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+  &__tell {
+    &:hover {
+      border-bottom: 1px solid #000000;
+    }
+  }
+  &__span {
+    display: block;
+    padding: 40px 0;
+    font-weight: 600;
+  }
+  &__body-left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    float: right;
+    input {
+      margin-bottom: 40px;
+      padding: 0 10px;
+      border-color: #000000;
+      border-width: 1px;
+      transition: border-color .3s ease-in;
+      &:hover {
+        border-color: #ccc;
+      }
+    }
+  }
+  &__body-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+  }
+  &__msg {
+    resize: none;
+    margin-bottom: 50px;
+    padding: 5px 10px;
+    border-color: #000000;
+    transition: border-color .3s ease-in;
+    overflow: hidden;
+    &:hover {
+      border-color: #ccc;
+    }
+  }
+  &__btn {
+    text-transform: uppercase;
+    background: #000;
+    color: #fff;
+    border-radius: 0;
+    transition: background-color .3s ease-in;
+    padding: 11px 0;
+    &:hover {
+      background-color: #ffffff;
+      color: #000;
+      border: 1px solid #000000;
+    }
+  }
+}

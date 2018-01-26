@@ -1,0 +1,39 @@
+.ba-portfolio {
+  padding-top: 130px;
+  &__body {
+    @include breakpoint(lg) {
+      background: url("../img/portfolio/gradient.png") no-repeat 100% 0,
+      url('../img/portfolio/gradient-reverse.png') no-repeat 0 90%;
+    }
+  }
+  &__elem {
+    padding-bottom: 40px;
+    @include breakpoint(md) {
+      padding-bottom: 100px;
+    }
+    @include breakpoint(lg) {
+      padding-bottom: 170px;
+  }
+  }
+  &__link-img {
+    display: block;
+    overflow: hidden;
+    img {
+      transition: transform .5s ease-in;
+      transform-origin: 0 0;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+  &__title {
+    padding: 40px 0 25px;
+
+  }
+  &__right {
+    padding-top: 0;
+    @include breakpoint(lg) {
+      padding-top: 300px;
+    }
+  }
+}

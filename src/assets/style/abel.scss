@@ -1,0 +1,41 @@
+.ba-abel {
+  padding: 90px 0 80px;
+  &__title {
+    font: 600 24px/1 $font-family-heading;
+    letter-spacing: 0.05em;
+    padding-bottom: 30px;
+    margin: 0;
+
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+    display: block;
+  }
+  &__text {
+    padding-bottom: 25px;
+  }
+}
+//breadcrumbs
+.ba-breadcrumbs {
+
+  i {
+    font-size: 40px;
+    vertical-align: middle;
+    padding: 0 20px;
+    transition: color 0.3s ease-in, padding 0.3s ease-in;
+  }
+  &__link {
+    font: 400 24px/1 $font-family-heading;
+    &:hover .left {
+      color: #c0c0c0;
+      padding-right: 35px;
+    }
+    &:hover .right {
+      color: #c0c0c0;
+      padding-left: 35px;
+    }
+    &:hover span {
+      border-bottom: 1px solid #000000;
+    }
+  }
+}

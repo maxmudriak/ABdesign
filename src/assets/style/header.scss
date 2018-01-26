@@ -1,0 +1,25 @@
+//nav
+.ba-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  li {
+    a {
+      font: 400 $font-size-h3 $font-family-heading;
+      color: $text-color;
+      padding: 0;
+      border-bottom: 1px solid transparent;
+      line-height: 1;
+      &:hover {
+        border-bottom: 1px solid $text-color;
+        background: none;
+      }
+    }
+  }
+}
+.nav-svg {
+
+  &:hover {
+  }
+}
