@@ -1,7 +1,10 @@
 //social
 .ba-social {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 20px;
+  @include breakpoint(sm) {
+    padding-top: 100px;
+  }
   &__list {
     margin: 0 auto;
     padding: 0;

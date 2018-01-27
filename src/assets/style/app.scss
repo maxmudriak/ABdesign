@@ -64,7 +64,10 @@ a{
 		font-size: $font-size-h3;
 	}
 	&__section {
-		padding-top: 160px;
+		padding-top: 80px;
+		@include breakpoint(md) {
+			padding-top: 160px;
+		}
 	}
 }
 //affix
@@ -72,23 +75,23 @@ a{
 .affix {
 	width: 100%;
 	top: 1px;
-	@include breakpoint(lg) {
-		width: 470px;
-	}
 	@include breakpoint(md) {
 		top: 1px;
 		width: 375px;
+	}
+	@include breakpoint(lg) {
+		width: 470px;
 	}
  }
 .affix-bottom {
 	position: static;
 	width: 100%;
-	@include breakpoint(lg) {
-		width: 470px;
-	}
 	@include breakpoint(md) {
 		position: absolute;
 		width: 375px;
+	}
+	@include breakpoint(lg) {
+		width: 470px;
 	}
 }
 
